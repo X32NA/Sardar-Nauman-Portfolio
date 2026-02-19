@@ -7,43 +7,79 @@
 <body>
 
 <section class="about">
+
 <h1>Multi-Load Structural Analysis of Bicycle Frame</h1>
 
-<h2>Objective</h2>
 <p>
-To evaluate structural performance of a bicycle frame under multiple
-realistic loading conditions and compare candidate materials.
+Static structural analysis was performed using ANSYS Mechanical
+to evaluate deformation and stress distribution across multiple
+materials under realistic loading scenarios.
 </p>
 
-<h2>Loading Conditions</h2>
+<hr>
+
+<h2>Material Comparison – Governing Load Case (Rear Wheel Bearing)</h2>
+
+<h3>Structural Steel</h3>
+<img src="../images/Structural steel deformation.png" width="600">
+<img src="../images/Steel Equivalent Stress.png" width="600">
+
+<hr>
+
+<h3>Aluminum 6060-T4</h3>
+<img src="../images/Al-6060 Deformation.png" width="600">
+<img src="../images/Al-6060 Equivalent Stress.png" width="600">
+
+<hr>
+
+<h3>Titanium Alloy</h3>
+<img src="../images/Ti-Alloy Deformation.png" width="600">
+<img src="../images/Titanium Equivalent Stress.png" width="600">
+
+<hr>
+
+<h3>Carbon Fiber</h3>
+<img src="../images/Carbon Fiber Deformation.png" width="600">
+<img src="../images/Carbon Fiber Equivalent Stress.png" width="600">
+
+<hr>
+
+<h2>Engineering Interpretation</h2>
+
+<p>
+The analysis compared total deformation and equivalent (von Mises) stress
+distribution across four structural materials.
+</p>
+
 <ul>
-<li>Steady Pedaling</li>
-<li>Startup Loading</li>
-<li>Horizontal Loading</li>
+<li>Steel demonstrated high rigidity with low deformation.</li>
+<li>Aluminum exhibited increased deformation due to lower modulus of elasticity.</li>
+<li>Titanium provided balanced stiffness with favorable strength-to-weight ratio.</li>
+<li>Carbon fiber showed lightweight advantage but localized stress sensitivity.</li>
+</ul>
+
+<h2>Other Load Cases Evaluated</h2>
+
+<p>
+In addition to rear wheel loading, the following scenarios were analyzed:
+</p>
+
+<ul>
 <li>Vertical Loading</li>
+<li>Startup Acceleration</li>
 <li>Rear Braking</li>
+<li>Horizontal Loading</li>
 </ul>
 
-<h2>Materials Compared</h2>
-<ul>
-<li>Structural Steel</li>
-<li>Aluminum 6060-T4</li>
-<li>Titanium Alloy</li>
-<li>Carbon Fiber</li>
-</ul>
-
-<h2>Engineering Outcome</h2>
 <p>
-Identified governing loading case, compared stress and deformation across
-materials, and evaluated strength-to-weight tradeoffs.
+Across all load cases, stress concentrations were primarily observed
+at joint intersections and connection points, indicating geometric
+discontinuity effects.
 </p>
-
-<img src="../images/bike1.png" width="700">
-<br><br>
-<img src="../images/bike2.png" width="700">
 
 <br><br>
 <a href="../index.html">← Back to Home</a>
+
 </section>
 
 </body>
