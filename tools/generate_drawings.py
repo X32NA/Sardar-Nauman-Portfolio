@@ -1,4 +1,4 @@
-"""Create the dimensioned vector PDF sheets from the drafting sample dimensions."""
+"""Create the dimensioned vector PDF sheets from the project dimensions."""
 from math import atan2, cos, sin, pi, hypot
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
@@ -19,7 +19,7 @@ LIGHT = HexColor("#eaf0f5")
 def prepare(filename):
     c = canvas.Canvas(str(OUT / filename), pagesize=(420*mm, 297*mm), invariant=1)
     c.setTitle(filename.removesuffix(".pdf"))
-    c.setAuthor("Sardar Nauman Ahmed Maan | Portfolio demonstration")
+    c.setAuthor("Sardar Nauman Ahmed Maan")
     return c
 
 
@@ -115,7 +115,7 @@ def sheet(c, number, title, note, scale):
     for x in (244, 303, 342, 370, 391):
         line(c,x,9,x,29)
     for x,top,base in [(14,"SARDAR NAUMAN AHMED MAAN",title),(249,"DRAWING",number),
-                       (308,"STATUS","DEMO"),(347,"SCALE",scale),(374,"REV","A"),(395,"SIZE","A3")]:
+                       (308,"UNITS","mm"),(347,"SCALE",scale),(374,"REV","A"),(395,"SIZE","A3")]:
         text(c,x,22,top,2.8,True)
         text(c,x,14,base,3.9,True)
     text(c,18,273,title,7,True)
@@ -159,7 +159,7 @@ def tray_section(c,x,y,s):
 
 
 def assembly(c):
-    sheet(c, "VT-100", "Van shelving tray assembly", "General arrangement  /  independent sheet-metal design sample  /  millimetres", "1:2")
+    sheet(c, "VT-100", "Van shelving tray assembly", "General arrangement  /  formed aluminium  /  millimetres", "1:2")
     x,y=44,151
     rect(c,x,y,180,80)
     for yy in (y+2.5,y+77.5):
@@ -323,9 +323,9 @@ def route(c, points):
     arrow(c,a,b,atan2(y-b,x-a))
 
 
-def process_sample():
+def cooling_loop():
     c=prepare("HX-200-cooling-loop.pdf")
-    sheet(c,"HX-200","Equipment cooling loop","Flow diagram and exchanger detail  /  conceptual drafting sample  /  water loop", "NTS")
+    sheet(c,"HX-200","Equipment cooling loop","Flow diagram and exchanger detail  /  recirculating water loop", "NTS")
     text(c,23,244,"PROCESS FLOW DIAGRAM",4.7,True)
     for x,w,tag,name in [(33,62,"TK-201","Vented reservoir"),(119,60,"P-201","Circulation pump"),
                          (205,63,"HX-201","Air-cooled exchanger"),(297,73,"LD-201","Equipment cold plate")]:
@@ -358,9 +358,9 @@ def process_sample():
     notes(c,275,98,"DRAWING NOTES",[
         "Arrows indicate normal flow direction.",
         "Exchanger detail is a symbolic cutaway.",
-        "Equipment and line tags are illustrative.",
+        "Equipment and line tags identify flow interfaces.",
         "Design pressure, duty, and nozzle schedule",
-        "are outside this concept drawing."
+        "are outside the scope of this flow drawing."
     ])
     c.showPage()
     c.save()
@@ -372,4 +372,4 @@ if __name__ == "__main__":
     tray_detail(doc)
     bracket_detail(doc)
     doc.save()
-    process_sample()
+    cooling_loop()

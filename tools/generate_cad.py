@@ -1,4 +1,4 @@
-"""Generate the sheet-metal demonstration geometry, flat DXFs, and viewer data."""
+"""Generate the sheet-metal geometry, flat DXFs, and viewer data."""
 from math import pi, sqrt
 from pathlib import Path
 import json

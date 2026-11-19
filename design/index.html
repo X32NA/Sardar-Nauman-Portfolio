@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Sheet-metal drawings, AutoCAD-compatible DXFs, a STEP assembly, and original SolidWorks mechanism work.">
+  <meta name="description" content="Mechanical drafting portfolio with dimensioned drawing sets, STEP assemblies, and DXF files for sheet metal, automation, and machining.">
   <meta name="theme-color" content="#0c252d">
   <title>Mechanical design and drafting | Sardar Nauman Ahmed Maan</title>
   <link rel="stylesheet" href="../style.css">
@@ -27,22 +27,35 @@
     <div>
       <p class="overline">Mechanical design portfolio · Calgary, AB</p>
       <h1>Design &amp; drafting</h1>
-      <p>Sheet-metal parts, mechanical assemblies, and drawings for fabrication and installation. Includes original SolidWorks project work and independent drafting samples.</p>
-      <div class="job-links"><a href="#sheet-metal">Sheet metal</a><a href="#automation">Mechanisms &amp; prototyping</a><a href="#process-drafting">Process drafting</a></div>
+      <p>Mechanical assemblies and dimensioned drawings for sheet metal, automation, machining, and process equipment. Browse the project files in PDF, STEP, and DXF.</p>
+      <div class="job-links"><a href="#drawing-index-title">Drawing packages</a><a href="#automation">SolidWorks mechanism projects</a></div>
     </div>
     <figure class="hero-image home-hero-image">
-      <img src="../work/tray-cover.webp" width="1200" height="800" alt="Exploded CAD rendering with upper tray, two wall brackets and eight hardware pieces">
+      <img src="../work/tray-cover.webp" width="1100" height="760" alt="Exploded CAD rendering with upper tray, two wall brackets and eight hardware pieces">
       <figcaption class="caption">VT-100 · formed tray and mounting bracket assembly</figcaption>
     </figure>
+  </div>
+</section>
+
+
+<section class="section project-directory" aria-labelledby="drawing-index-title">
+  <div class="shell">
+    <header class="section-intro"><h2 id="drawing-index-title">Drawing packages</h2></header>
+    <div class="drawing-index">
+      <a href="#sheet-metal"><strong>Van shelving tray</strong><span>Sheet metal · VT-100</span></a>
+      <a href="#sensor-stand"><strong>Adjustable sensor stand</strong><span>Automation · SM-100</span></a>
+      <a href="#drill-fixture"><strong>Drill locating fixture</strong><span>Workholding · DF-200</span></a>
+      <a href="#process-drafting"><strong>Equipment cooling loop</strong><span>Process flow · HX-200</span></a>
+    </div>
   </div>
 </section>
 
 <section class="section" id="sheet-metal">
   <div class="shell">
     <header class="section-intro">
-      <p class="overline">Independent design sample · VT-100</p>
+      <p class="overline">Sheet-metal fabrication · VT-100</p>
       <h2>Van shelving tray</h2>
-      <p>A 360 × 160 mm aluminium tray for a service-vehicle storage concept. Two identical wall brackets simplify the parts list. The tray bolts on from above so it can be removed separately from the wall mounts.</p>
+      <p>A 360 × 160 mm aluminium tray for service-vehicle storage. Two identical wall brackets simplify the parts list. The tray bolts on from above so it can be removed separately from the wall mounts.</p>
     </header>
     <div class="split">
       <figure class="figure">
@@ -70,25 +83,86 @@
           <div><dt>Fabrication</dt><dd>Laser cut and press-brake form</dd></div>
           <div><dt>Nominal CAD check</dt><dd>11 solids with no solid interference</dd></div>
         </dl>
-        <p class="fine">Design sample. Bend assumptions require shop confirmation. Vehicle attachment, payload, vibration, and crash retention require separate validation.</p>
+        <p class="fine">Confirm bend allowances with the fabricator. Vehicle attachment and payload ratings depend on vehicle-specific installation and testing.</p>
       </div>
     </div>
     <figure class="figure figures-solo" style="margin-top:1.5rem">
-      <a href="../work/VT-100-drawing-package.pdf"><img src="../work/tray-drawing.webp" width="1290" height="913" alt="VT-100 assembly sheet with top, front, and side views, item balloons, and bill of materials" loading="lazy"></a>
+      <a href="../work/VT-100-drawing-package.pdf"><img src="../work/tray-drawing.webp" width="1075" height="761" alt="VT-100 assembly sheet with top, front, and side views, item balloons, and bill of materials" loading="lazy"></a>
       <figcaption>VT-100 general arrangement. Open the PDF for the formed tray and bracket detail sheets.</figcaption>
     </figure>
+  </div>
+</section>
+
+
+<section class="section" id="sensor-stand">
+  <div class="shell">
+    <header class="section-intro">
+      <p class="overline">Machine automation · SM-100</p>
+      <h2>Adjustable sensor stand</h2>
+      <p>A height-adjustable mount for an M12 barrel sensor on a machine or inspection station. Two screws spaced 20 mm apart clamp the carriage through a single slot and constrain its rotation. The sensor itself can be adjusted axially using the barrel locknuts.</p>
+    </header>
+    <div class="split">
+      <figure class="figure dark-media">
+        <img src="../work/sm-100-iso.webp" width="1100" height="760" alt="CAD model of the bolted base, slotted upright, orange carriage, and M12 barrel sensor" loading="lazy">
+        <figcaption>Isometric view of the base, upright, carriage, and sensor envelope.</figcaption>
+      </figure>
+      <div class="copy">
+        <h3>Mounting and adjustment</h3>
+        <p>Four clearance holes fix the 100 × 70 mm base to the machine. Recessed fastener heads let the base sit flush. The nominal sensor centreline adjusts from 61.3 to 94.7 mm above the mounting surface.</p>
+        <dl class="facts">
+          <div><dt>Materials</dt><dd>6061-T6 aluminium</dd></div>
+          <div><dt>Interfaces</dt><dd>M4 upright mount, M6 carriage clamp, Ø12.2 mm sensor bore</dd></div>
+          <div><dt>Drawing set</dt><dd>Assembly BOM, base hole chart, upright and carriage details</dd></div>
+        </dl>
+        <div class="assembly-tools">
+          <a class="btn primary" href="../work/SM-100-sensor-stand-drawings.pdf">Drawings · PDF</a>
+          <a class="btn" href="../work/SM-100-sensor-stand.step" download>Assembly · STEP</a>
+          <a class="btn" href="../work/SM-101-base-machining.dxf" download>Base layout · DXF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="drill-fixture">
+  <div class="shell">
+    <header class="section-intro">
+      <p class="overline">Machining &amp; workholding · DF-200</p>
+      <h2>Drill locating fixture</h2>
+      <p>A fixture for locating and drilling a Ø6 mm hole in a 78 × 40 × 6 mm blank. Two dowels establish the long edge, a third locates the short edge, and a hardened-steel bushing guides the drill.</p>
+    </header>
+    <div class="split">
+      <figure class="figure dark-media">
+        <img src="../work/df-200-iso.webp" width="1100" height="760" alt="Exploded CAD view showing a machined fixture base and three locating dowels below the guide block and gold drill bushing" loading="lazy">
+        <figcaption>Exploded view of the three locating dowels, guide block, and shouldered drill bushing.</figcaption>
+      </figure>
+      <div class="copy">
+        <h3>Workpiece location and tool clearance</h3>
+        <p>The hole centre is 39 mm and 20 mm from the located edges. The stepped guide clears the blank and leaves access for a separate clamp. A Ø10 mm opening below the workpiece gives the drill clearance at breakthrough.</p>
+        <dl class="facts">
+          <div><dt>Materials</dt><dd>6061-T6 base and guide, hardened-steel bushing</dd></div>
+          <div><dt>Inspection</dt><dd>Coordinate hole table and ±0.05 mm locator-centre tolerance</dd></div>
+          <div><dt>Drawing set</dt><dd>Assembly BOM, setup sequence, base, guide and bushing details</dd></div>
+        </dl>
+        <div class="assembly-tools">
+          <a class="btn primary" href="../work/DF-200-drill-fixture-drawings.pdf">Drawings · PDF</a>
+          <a class="btn" href="../work/DF-200-drill-fixture.step" download>Assembly · STEP</a>
+          <a class="btn" href="../work/DF-201-base-machining.dxf" download>Base layout · DXF</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section" id="automation">
   <div class="shell">
     <header class="section-intro">
-      <p class="overline">Original project work · SolidWorks</p>
+      <p class="overline">Mechanism design · SolidWorks</p>
       <h2>Mechanisms &amp; prototyping</h2>
     </header>
     <div class="split">
       <figure class="figure">
-        <video class="video-frame" controls playsinline preload="metadata" poster="../work/robot-poster.webp" aria-label="SolidWorks robotic arm motion demonstration">
+        <video class="video-frame" controls playsinline preload="metadata" poster="../work/robot-poster.webp" aria-label="SolidWorks robotic arm motion study">
           <source src="../images/Robot_Motion.mp4" type="video/mp4">
           <a href="../images/Robot_Motion.mp4">Download the motion study</a>
         </video>
@@ -108,19 +182,19 @@
 <section class="section" id="process-drafting">
   <div class="shell">
     <header class="section-intro">
-      <p class="overline">Independent drafting sample · HX-200</p>
+      <p class="overline">Process equipment · HX-200</p>
       <h2>Equipment cooling loop</h2>
     </header>
     <div class="split">
       <figure class="figure">
-        <a href="../work/HX-200-cooling-loop.pdf"><img src="../work/hx-drawing.webp" width="1290" height="913" alt="Process flow diagram above a longitudinal exchanger detail with tube, fin, header and airflow callouts" loading="lazy"></a>
+        <a href="../work/HX-200-cooling-loop.pdf"><img src="../work/hx-drawing.webp" width="1075" height="761" alt="Process flow diagram above a longitudinal exchanger detail with tube, fin, header and airflow callouts" loading="lazy"></a>
         <figcaption>Equipment and line tags, flow direction, and a longitudinal exchanger detail.</figcaption>
       </figure>
       <div class="copy">
         <h3>Process flow and exchanger detail</h3>
         <p>The drawing traces water through a vented reservoir, circulation pump, air-cooled exchanger, and equipment cold plate. The exchanger detail shows the tube paths, fin bank, and header interfaces.</p>
         <div class="actions"><a class="btn primary" href="../work/HX-200-cooling-loop.pdf">Process drawing · PDF</a></div>
-        <p class="fine">Concept drawing. Design pressure, thermal duty, instrumentation, and fabrication specifications are outside the sample scope.</p>
+        <p class="fine">This flow sheet defines routing and equipment interfaces. Pressure, thermal duty, and instrumentation require separate specifications.</p>
       </div>
     </div>
   </div>
