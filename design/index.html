@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sheet-metal drawings, AutoCAD-compatible DXFs, a STEP assembly, and original SolidWorks mechanism work.">
+  <meta name="theme-color" content="#0c252d">
+  <title>Mechanical design and drafting | Sardar Nauman Ahmed Maan</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell topbar">
+    <a class="brand" href="../">Sardar Nauman Ahmed Maan</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../design/" aria-current="page">Design &amp; drafting</a>
+      <a href="../analysis/">FEA, CFD &amp; thermal</a>
+      <a href="mailto:naumanahmed844@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero dark">
+  <div class="shell hero-grid">
+    <div>
+      <p class="overline">Mechanical design portfolio · Calgary, AB</p>
+      <h1>Design &amp; drafting</h1>
+      <p>Sheet-metal parts, mechanical assemblies, and drawings for fabrication and installation. Includes original SolidWorks project work and independent drafting samples.</p>
+      <div class="job-links"><a href="#sheet-metal">Sheet metal</a><a href="#automation">Mechanisms &amp; prototyping</a><a href="#process-drafting">Process drafting</a></div>
+    </div>
+    <figure class="hero-image home-hero-image">
+      <img src="../work/tray-cover.webp" width="1200" height="800" alt="Exploded CAD rendering with upper tray, two wall brackets and eight hardware pieces">
+      <figcaption class="caption">VT-100 · formed tray and mounting bracket assembly</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="sheet-metal">
+  <div class="shell">
+    <header class="section-intro">
+      <p class="overline">Independent design sample · VT-100</p>
+      <h2>Van shelving tray</h2>
+      <p>A 360 × 160 mm aluminium tray for a service-vehicle storage concept. Two identical wall brackets simplify the parts list. The tray bolts on from above so it can be removed separately from the wall mounts.</p>
+    </header>
+    <div class="split">
+      <figure class="figure">
+        <div class="viewer"><canvas id="tray-view" aria-label="Interactive CAD model of the van shelving tray">An exploded view is available in the drawing and CAD downloads.</canvas></div>
+        <div id="viewer-controls" class="viewer-bar" hidden aria-label="Assembly view controls">
+          <button type="button" data-view="exploded" aria-pressed="true">Exploded</button>
+          <button type="button" data-view="assembled" aria-pressed="false">Assembled</button>
+          <button type="button" data-view="left" aria-label="Rotate left">Left</button>
+          <button type="button" data-view="right" aria-label="Rotate right">Right</button>
+          <button type="button" data-view="reset">Reset view</button>
+        </div>
+        <figcaption>Drag to rotate. The exploded view separates the tray, brackets, and M5 hardware.</figcaption>
+      </figure>
+      <div class="copy">
+        <h3>Drawings and CAD files</h3>
+        <p>The drawing set includes an assembly BOM, orthographic views, part dimensions, forming notes, and an installation sequence. The flat files use separate cut and bend-reference layers.</p>
+        <div class="assembly-tools">
+          <a class="btn primary" href="../work/VT-100-drawing-package.pdf">Drawing set · PDF</a>
+          <a class="btn" href="../work/VT-100-tray-assembly.step" download>3D assembly · STEP</a>
+          <a class="btn" href="../work/VT-101-tray-flat.dxf" download>Tray flat · DXF</a>
+          <a class="btn" href="../work/VT-102-bracket-flat.dxf" download>Bracket flat · DXF</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Materials</dt><dd>5052-H32 aluminium, 2 mm tray and 3 mm brackets</dd></div>
+          <div><dt>Fabrication</dt><dd>Laser cut and press-brake form</dd></div>
+          <div><dt>Nominal CAD check</dt><dd>11 solids with no solid interference</dd></div>
+        </dl>
+        <p class="fine">Design sample. Bend assumptions require shop confirmation. Vehicle attachment, payload, vibration, and crash retention require separate validation.</p>
+      </div>
+    </div>
+    <figure class="figure figures-solo" style="margin-top:1.5rem">
+      <a href="../work/VT-100-drawing-package.pdf"><img src="../work/tray-drawing.webp" width="1290" height="913" alt="VT-100 assembly sheet with top, front, and side views, item balloons, and bill of materials" loading="lazy"></a>
+      <figcaption>VT-100 general arrangement. Open the PDF for the formed tray and bracket detail sheets.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="automation">
+  <div class="shell">
+    <header class="section-intro">
+      <p class="overline">Original project work · SolidWorks</p>
+      <h2>Mechanisms &amp; prototyping</h2>
+    </header>
+    <div class="split">
+      <figure class="figure">
+        <video class="video-frame" controls playsinline preload="metadata" poster="../work/robot-poster.webp" aria-label="SolidWorks robotic arm motion demonstration">
+          <source src="../images/Robot_Motion.mp4" type="video/mp4">
+          <a href="../images/Robot_Motion.mp4">Download the motion study</a>
+        </video>
+        <figcaption>SolidWorks animation of the six-axis assembly. <a href="../images/Robot_Motion.mp4">Open the motion video</a></figcaption>
+      </figure>
+      <div class="copy">
+        <h3>Six-axis robotic manipulator</h3>
+        <p>I modelled the base, shoulder, elbow, and wrist as an articulated assembly. The motion study shows how the linked components move through a programmed sequence and supports review of joint arrangement and clearance.</p>
+        <h3>Motorized test platform</h3>
+        <p>For my NUST capstone, I worked on a SolidWorks platform with pitch and yaw actuation, 3D-printed stepper-motor mounts, and an integrated copper-rail cooling system. I supported prototype assembly and testing.</p>
+        <div class="actions"><a class="btn" href="../analysis/#thermal-fluids">View the cooling analysis</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process-drafting">
+  <div class="shell">
+    <header class="section-intro">
+      <p class="overline">Independent drafting sample · HX-200</p>
+      <h2>Equipment cooling loop</h2>
+    </header>
+    <div class="split">
+      <figure class="figure">
+        <a href="../work/HX-200-cooling-loop.pdf"><img src="../work/hx-drawing.webp" width="1290" height="913" alt="Process flow diagram above a longitudinal exchanger detail with tube, fin, header and airflow callouts" loading="lazy"></a>
+        <figcaption>Equipment and line tags, flow direction, and a longitudinal exchanger detail.</figcaption>
+      </figure>
+      <div class="copy">
+        <h3>Process flow and exchanger detail</h3>
+        <p>The drawing traces water through a vented reservoir, circulation pump, air-cooled exchanger, and equipment cold plate. The exchanger detail shows the tube paths, fin bank, and header interfaces.</p>
+        <div class="actions"><a class="btn primary" href="../work/HX-200-cooling-loop.pdf">Process drawing · PDF</a></div>
+        <p class="fine">Concept drawing. Design pressure, thermal duty, instrumentation, and fabrication specifications are outside the sample scope.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="../work/tray-mesh.js" defer></script>
+<script src="../work/viewer.js" defer></script>
+
+</main>
+<footer class="site-footer dark">
+  <div class="shell foot">
+    <p>Sardar Nauman Ahmed Maan · Calgary, AB</p>
+    <address><a href="mailto:naumanahmed844@gmail.com">Email</a><a href="https://github.com/X32NA">GitHub</a></address>
+  </div>
+</footer>
+</body>
+</html>
